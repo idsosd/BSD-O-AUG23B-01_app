@@ -49,20 +49,33 @@
 
   <div class="row">
     <div class="col-4">
-
     </div>
     <div class="col-4">
+<!-- mijn twee inputvelden -->
+<form class="row g-3 mb-3">
+      <div class="col-md-5">
+        <label for="inputTafelvan" class="form-label">Tafel van</label>
+        <input type="number" class="form-control" id="inputTafelvan">
+      </div>
+      <div class="col-md-5">
+        <label for="inputTafeltot" class="form-label">Tafel tot</label>
+        <input type="number" class="form-control" id="inputTafeltot">
+      </div>
+      <div class="col-md-2 mt-5">
+        <button type="button" class="btn btn-success" onclick="showTafel()">GO</button>
+      </div>
+</form>
+<!-- card -->
       <div class="card text-center">
-        <div class="card-header">
-          Tafel van 7
+        <div id="tafelheader" class="card-header">
+          Tafel van ...
         </div>
         <div class="card-body">
           <p id="tafel" class="card-text">
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
         <div class="card-footer text-body-secondary">
-          2 days ago
+          made by OSD 2023
         </div>
       </div>
     </div>
