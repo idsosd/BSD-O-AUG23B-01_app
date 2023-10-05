@@ -59,10 +59,10 @@
         </div>
         <div class="col-md-5">
           <label for="inputTafeltot" class="form-label">Tafel tot</label>
-          <input type="number" class="form-control" id="inputTafeltot">
+          <input type="number" class="form-control" id="inputTafeltot" value="10">
         </div>
         <div class="col-md-2 mt-5">
-          <button type="button" class="btn btn-primary" onclick="showTafel()">GO</button>
+          <button type="button" class="btn btn-primary" onclick="showSom()">GO</button>
         </div>
       </form>
       <!-- card -->
@@ -73,13 +73,13 @@
         <div class="card-body">
           <form class="row g-3 mb-3">
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Som" disabled>
+              <input type="text" id="inputSom" class="form-control" placeholder="Som" disabled>
               <span class="input-group-text">=</span>
-              <input type="text" class="form-control is-valid" placeholder="Antwoord">
+              <input type="text" id="inputAntwoord" class="form-control" placeholder="Antwoord">
             </div>
           </form>
           <div class="d-grid gap-2">
-          <button class="btn btn-success">CHECK ANTWOORD</button>
+          <button class="btn btn-success" onclick="checkAntwoord()">CHECK ANTWOORD</button>
             </div>
         </div>
         <div class="card-footer text-body-secondary">
